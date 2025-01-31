@@ -1,0 +1,11 @@
+<div class="container mt-4 text-center">
+  <div class="h1 text-warning">May I help you?</div>
+  <div class="h4">Enter the Book Name:</div>
+  <input
+    type="text"
+    [(ngModel)]="bookText"
+    class="form-control mx-auto w-50"
+    placeholder="Search..."
+  />
+  <div class="h4" style="color: orange;" [hidden]="!bookText">You are searching for {{ bookText }}</div>
+</div>

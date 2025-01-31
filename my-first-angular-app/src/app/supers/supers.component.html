@@ -1,0 +1,10 @@
+<p>Super Works!</p>
+<div [style.background-color]="backgroundColor">I am colored text</div>
+<button (click)="changeColor()">change Color</button>
+
+<div>
+    <label for="">Super Hero Name</label>
+    <input type="text" [(ngModel)]='hero' #myHero>
+</div>
+The Chose Super Hero is {{hero}}
+<button (click)="changeHero(myHero.value)">update Hero</button>
